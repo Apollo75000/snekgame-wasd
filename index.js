@@ -139,7 +139,7 @@ function clearScreen(){
 
 function drawSnake(){
    
-    ctx.fillStyle = 'yellow';
+    ctx.fillStyle = 'LightPink';
     for(let i =0; i < snakeParts.length; i++){
         let part =  snakeParts[i];
         ctx.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize);
