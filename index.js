@@ -1,7 +1,10 @@
 
 
+
+
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
+var img = document.getElementById("background");
 
 
 class SnakePart{
@@ -129,8 +132,8 @@ function drawScore(){
 }
 
 function clearScreen(){
-    ctx.fillStyle = 'Black';
-    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.drawImage(img, 0,0, canvas.width,canvas.height)
+   
 }
 
 
@@ -209,5 +212,6 @@ function keyDown(event){
         xVelocity = 1;
     }
 }
+
 
 drawGame();
